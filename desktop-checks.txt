@@ -1,0 +1,4 @@
+robot --variable ip_address:{{TARGET}} --test "CPU Usage Check" util\clearAll.robot
+robot --variable ip_address:{{TARGET}} --test "HDD Usage Check" util\snmpActions.robot
+robot --variable ip_address:{{TARGET}} --test "Check Open Ports" util\portscan.robot
+robot --variable ip_address:{{TARGET}} --variablefile util\variables-file.py util\big-big-test.robot
